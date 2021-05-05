@@ -1,6 +1,3 @@
 # Install ChromeDriver.
-PLATFORM=linux64 # Change this line if You're using other platform
-VERSION=$(curl http://chromedriver.storage.googleapis.com/LATEST_RELEASE)
-curl http://chromedriver.storage.googleapis.com/$VERSION/chromedriver_$PLATFORM.zip -LOk
-unzip chromedriver_*
-rm chromedriver_*
+wget http://chromedriver.storage.googleapis.com/2.23/chromedriver_linux64.zip
+unzip chromedriver_linux64.zip
