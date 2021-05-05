@@ -16,7 +16,7 @@ public class Steps {
     public void open_the_Firefox_and_launch_the_application() throws Throwable							
     {		
         	
-			System.setProperty("webdriver.chrome.driver", "/opt/homebrew/bin/chromedriver");					
+								
 			driver= new ChromeDriver() ;					
 			driver.manage().window().maximize();			
 			driver.get("http://demo.guru99.com/v4");
