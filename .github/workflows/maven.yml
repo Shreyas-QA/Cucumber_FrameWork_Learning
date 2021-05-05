@@ -23,7 +23,8 @@ jobs:
         distribution: 'adopt'
     # Install the chrome and chrome webdriver
     - name: Launch chrome
-      run: chmod +x Install.sh
-          ./Install.sh
+      run: |
+        chmod +x Install.sh
+        ./Install.sh
     - name: Build with Maven
       run: mvn -B package --file pom.xml clean test
