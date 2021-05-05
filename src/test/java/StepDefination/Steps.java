@@ -3,6 +3,7 @@ package StepDefination;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -16,8 +17,10 @@ public class Steps {
     public void open_the_Firefox_and_launch_the_application() throws Throwable							
     {		
         	
-								
-			driver= new ChromeDriver() ;					
+							
+			ChromeOptions opt = new ChromeOptions();
+			opt.addArguments("--no-sandbox");
+			driver= new ChromeDriver(opt) ;
 			driver.manage().window().maximize();			
 			driver.get("http://demo.guru99.com/v4");
 			
