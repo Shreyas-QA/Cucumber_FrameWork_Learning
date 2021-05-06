@@ -20,6 +20,7 @@ public class Steps {
 							
 			ChromeOptions opt = new ChromeOptions();
 			opt.addArguments("--no-sandbox");
+			opt.addArguments("--disable-dev-shm-usage");
 			driver= new ChromeDriver(opt) ;
 			driver.manage().window().maximize();			
 			driver.get("http://demo.guru99.com/v4");
@@ -27,12 +28,12 @@ public class Steps {
 		
     }		
 
-    @When("^Enter the Username and Password$")					
-    public void enter_the_Username_and_Password() throws Throwable 							
+    @When("^Enter the Username \"(.*)\" and Password \"(.*)\"$")					
+    public void enter_the_Username_and_Password(String username , String password) throws Throwable 							
     {		
        				
-    	driver.findElement(By.name("uid")).sendKeys("username12");							
-        driver.findElement(By.name("password")).sendKeys("password12");
+    	driver.findElement(By.name("uid")).sendKeys("username");							
+        driver.findElement(By.name("password")).sendKeys("password");
     	
     }		
 
