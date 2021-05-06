@@ -16,8 +16,8 @@ public class Steps {
 	@Given("^Open the Chrome and launch the application$")				
     public void open_the_Firefox_and_launch_the_application() throws Throwable							
     {		
-        	
-							
+        		
+			System.setProperty("webdriver.chrome.driver ", "/opt/homebrew/bin/chromedriver");			
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("–no-sandbox");
 			options.addArguments("–disable-dev-shm-usage");
