@@ -18,13 +18,11 @@ public class Steps {
     {		
         	
 							
-			ChromeOptions opt = new ChromeOptions();
-			opt.addArguments("--no-sandbox");
-			opt.addArguments("disable-infobars"); // disabling infobars
-			opt.addArguments("--disable-extensions"); // disabling extensions
-			opt.addArguments("--disable-gpu"); // 
-			opt.addArguments("--disable-dev-shm-usage");
-			driver= new ChromeDriver(opt) ;
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("–no-sandbox");
+			options.addArguments("–disable-dev-shm-usage");
+			options.setExperimentalOption("useAutomationExtension", false);
+			WebDriver driver = new ChromeDriver(options);
 			driver.manage().window().maximize();			
 			driver.get("http://demo.guru99.com/v4");
 			
