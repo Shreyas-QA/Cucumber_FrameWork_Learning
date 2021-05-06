@@ -19,6 +19,9 @@ public class Steps {
         	
 							
 			ChromeOptions opt = new ChromeOptions();
+			opt.addArguments("disable-infobars"); // disabling infobars
+			opt.addArguments("--disable-extensions"); // disabling extensions
+			opt.addArguments("--disable-gpu"); // 
 			opt.addArguments("--no-sandbox");
 			opt.addArguments("--disable-dev-shm-usage");
 			driver= new ChromeDriver(opt) ;
