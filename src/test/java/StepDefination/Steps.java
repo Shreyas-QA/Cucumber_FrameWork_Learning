@@ -30,7 +30,7 @@ public class Steps {
     }		
 
     @When("^Enter the Username \"(.*)\" and Password \"(.*)\"$")					
-    public void enter_the_Username_and_Password(String username , String password) throws Throwable 							
+    public void enter_the_UsernameandPassword(String username , String password) throws Throwable 							
     {		
        				
     	driver.findElement(By.name("uid")).sendKeys("username");							
