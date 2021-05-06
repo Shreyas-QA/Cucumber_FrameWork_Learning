@@ -11,7 +11,7 @@ import io.cucumber.java.en.When;
 
 public class Steps {
 
-	WebDriver driver;
+	static WebDriver driver;
 	
 	@Given("^Open the Chrome and launch the application$")				
     public void open_the_Firefox_and_launch_the_application() throws Throwable							
@@ -22,19 +22,19 @@ public class Steps {
 			options.addArguments("–no-sandbox");
 			options.addArguments("–disable-dev-shm-usage");
 			options.setExperimentalOption("useAutomationExtension", false);
-			WebDriver driver = new ChromeDriver(options);
+			driver = new ChromeDriver(options);
 			driver.manage().window().maximize();			
 			driver.get("http://demo.guru99.com/v4");
 			
 		
     }		
 
-    @When("^Enter the Username \"(.*)\" and Password \"(.*)\"$")					
-    public void enter_the_UsernameandPassword(String username , String password) throws Throwable 							
+    @When("^Enter the Username and Password$")					
+    public void enter_the_UsernameandPassword() throws Throwable 							
     {		
        				
-    	driver.findElement(By.name("uid")).sendKeys("username");							
-        driver.findElement(By.name("password")).sendKeys("password");
+    	driver.findElement(By.name("uid")).sendKeys("shreyas");							
+        driver.findElement(By.name("password")).sendKeys("Shreyas");
     	
     }		
 
