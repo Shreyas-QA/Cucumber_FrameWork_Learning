@@ -44,7 +44,7 @@
 Feature: Reset functionality on login page of Application 
 
 
-Scenario: Verification of Reset button 
+Scenario Outline: Verification of Reset button 
 
 
 Given Open the Chrome and launch the application			
@@ -57,7 +57,5 @@ Then Reset the credential
 
 Examples:                      		
 
-|username  |password         |		
-|User1     |password1        |		
-|User2     |password2        |		
-|User3     |password3        |
+|username  |password         |	
+|User1     |password1        |
