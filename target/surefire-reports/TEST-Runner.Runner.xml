@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Runner.Runner" time="35.499" tests="3" errors="1" skipped="0" failures="0">
+<testsuite name="Runner.Runner" time="31.058" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="16+14"/>
@@ -56,31 +56,7 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="Verification of Reset button" classname="Functionality on login page of Application" time="7.201"/>
-  <testcase name="Verification Of Submit button" classname="Functionality on login page of Application" time="17.846"/>
-  <testcase name="Login with Invalid Credentials" classname="Functionality on login page of Application" time="10.452">
-    <error message="The step &apos;User logs in using Username as Tom and Password password1&apos; is undefined.&#10;You can implement this step using the snippet(s) below:&#10;&#10;@When(&quot;User logs in using Username as Tom and Password password1&quot;)&#10;public void user_logs_in_using_username_as_tom_and_password_password1() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;When(&quot;User logs in using Username as Tom and Password password1&quot;, () -&gt; {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java8.PendingException();&#10;});&#10;" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: The step 'User logs in using Username as Tom and Password password1' is undefined.
-You can implement this step using the snippet(s) below:
-
-@When("User logs in using Username as Tom and Password password1")
-public void user_logs_in_using_username_as_tom_and_password_password1() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-When("User logs in using Username as Tom and Password password1", () -> {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java8.PendingException();
-});
-
-</error>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 6200
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-[1620492496.724][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
-[1620492496.724][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
-May 08, 2021 10:18:19 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
+  <testcase name="Verification of Reset button" classname="Functionality on login page of Application" time="9.42"/>
+  <testcase name="Verification Of Submit button" classname="Functionality on login page of Application" time="10.822"/>
+  <testcase name="Login with Invalid Credentials" classname="Functionality on login page of Application" time="10.816"/>
 </testsuite>

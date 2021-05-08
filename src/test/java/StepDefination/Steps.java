@@ -61,8 +61,10 @@ public class Steps {
     public void user_logs_in_using_username_as_user1_and_password_password1(String username, String password) throws InterruptedException {
        
     	Thread.sleep(2000);
-    	driver.findElement(By.name("uid")).sendKeys(username);							
+    	driver.findElement(By.name("uid")).sendKeys(username);	
+    	System.out.println(username);
         driver.findElement(By.name("password")).sendKeys(password);
+        System.out.println(password);
     }
 
     @Then("error message Alert will be popup")
