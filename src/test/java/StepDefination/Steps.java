@@ -58,8 +58,9 @@ public class Steps {
     }	
     
     @When("User logs in using Username as \"(.*)\" and Password \"(.*)\"$")
-    public void user_logs_in_using_username_as_user1_and_password_password1(String username, String password) {
+    public void user_logs_in_using_username_as_user1_and_password_password1(String username, String password) throws InterruptedException {
        
+    	Thread.sleep(2000);
     	driver.findElement(By.name("uid")).sendKeys(username);							
         driver.findElement(By.name("password")).sendKeys(password);
     }
