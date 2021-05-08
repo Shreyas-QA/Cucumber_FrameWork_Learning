@@ -65,7 +65,7 @@ Scenario:  Verification Of Submit button
 Scenario Outline: Login with Invalid Credentials
 
 
-When User logs in using Username as <username> and Password <password>
+When User logs in using Username as "<username>" and Password "<password>"
 Then error message Alert will be popup
 Then Click on OK button
 

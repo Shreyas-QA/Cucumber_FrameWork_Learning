@@ -1,36 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: Runner.Runner
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 118.977 sec <<< FAILURE! - in Runner.Runner
-Verification of Reset button(Functionality on login page of Application)  Time elapsed: 96.324 sec  <<< ERROR!
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='uid']"}
-  (Session info: chrome=90.0.4430.93)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'shreyass-MacBook-Air.local', ip: 'fe80:0:0:0:c0a:230d:32fb:55f1%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '11.2.2', java.version: '16'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /var/folders/7v/lvzqjczx2xn...}, goog:chromeOptions: {debuggerAddress: localhost:64603}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 487bc40a9f23094c993ff3d406af8dac
-*** Element info: {Using=name, value=uid}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at StepDefination.Steps.enter_the_UsernameandPassword(Steps.java:39)
-	at ✽.Enter the Username and Password(file:///Users/shreyassambare/Cucumber_FrameWork_Learning/FeatureFile/MyTest.feature:56)
-
-Login with Invalid Credentials(Functionality on login page of Application)  Time elapsed: 7.501 sec  <<< ERROR!
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 35.52 sec <<< FAILURE! - in Runner.Runner
+Login with Invalid Credentials(Functionality on login page of Application)  Time elapsed: 10.452 sec  <<< ERROR!
 io.cucumber.junit.UndefinedStepException: The step 'User logs in using Username as Tom and Password password1' is undefined.
 You can implement this step using the snippet(s) below:
 
