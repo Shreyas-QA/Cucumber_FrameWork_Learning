@@ -2,6 +2,8 @@ package StepDefination;
 
 import static org.junit.Assert.assertEquals;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -26,7 +28,8 @@ public class Steps {
 			options.addArguments("–disable-dev-shm-usage");
 			options.setExperimentalOption("useAutomationExtension", false);
 			driver = new ChromeDriver(options);
-			driver.manage().window().maximize();			
+			driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			driver.get("http://demo.guru99.com/v4");
 			
 		
