@@ -49,7 +49,7 @@ public class Steps {
     public void Submit_the_credential() throws Throwable 							
     {    		
         			
-    	driver.findElement(By.name("btnReset")).click();
+    	driver.findElement(By.name("btnLogin")).click();
     }	
     	
 }
