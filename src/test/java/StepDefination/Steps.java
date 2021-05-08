@@ -30,7 +30,7 @@ public class Steps {
 		
     }		
 
-    @When("^Enter the Username and Password $")					
+    @When("^Enter the Username and Password$")					
     public void enter_the_UsernameandPassword() throws Throwable 							
     {		
        				

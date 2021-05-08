@@ -49,7 +49,7 @@ I want to run the cucumber test to verify it is working
 Background: User is Logged In
  
  	Given Open the Chrome and launch the application
- 	When Enter the Username and Password
+ 	When  Enter the Username and Password
  
 Scenario:  Verification of Reset button 
 
