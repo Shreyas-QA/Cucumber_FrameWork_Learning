@@ -1,4 +1,37 @@
 -------------------------------------------------------------------------------
 Test set: Runner.Runner
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.128 sec - in Runner.Runner
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 23.777 sec <<< FAILURE! - in Runner.Runner
+Login with Invalid Credentials(Functionality on login page of Application)  Time elapsed: 6.879 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step 'User logs in using Username as “USER1” and Password “PASSWORD1”' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("User logs in using Username as “USER1” and Password “PASSWORD1”")
+public void user_logs_in_using_username_as_user1_and_password_password1() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+When("User logs in using Username as “USER1” and Password “PASSWORD1”", () -> {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java8.PendingException();
+});
+@Then("error message Alert will be popup")
+public void error_message_alert_will_be_popup() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+Then("error message Alert will be popup", () -> {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java8.PendingException();
+});
+@Then("Click on OK button")
+public void click_on_ok_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+Then("Click on OK button", () -> {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java8.PendingException();
+});
+
+

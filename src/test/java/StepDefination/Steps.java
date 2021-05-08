@@ -56,5 +56,28 @@ public class Steps {
     	String title = driver.getTitle();
     	assertEquals("Guru99 Bank Manager HomePage",title);
     }	
+    
+    @When("User logs in using Username as \"(.*)\" and Password \"(.*)\"$")
+    public void user_logs_in_using_username_as_user1_and_password_password1(String username, String password) {
+       
+    	driver.findElement(By.name("uid")).sendKeys(username);							
+        driver.findElement(By.name("password")).sendKeys(password);
+    }
+
+    @Then("error message Alert will be popup")
+    public void error_message_alert_will_be_popup() {
+    	
+    	driver.findElement(By.name("btnLogin")).click();
+    	String getText = driver.switchTo().alert().getText();
+    	System.out.println(getText);
+    	
+    }
+    
+    @Then("Click on OK button")
+    public void click_on_ok_button() {
+    	
+    	driver.switchTo().alert().accept();
+        
+    }
     	
 }

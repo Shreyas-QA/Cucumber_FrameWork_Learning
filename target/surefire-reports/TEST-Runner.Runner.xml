@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Runner.Runner" time="16.107" tests="2" errors="0" skipped="0" failures="0">
+<testsuite name="Runner.Runner" time="23.761" tests="3" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="16+14"/>
@@ -56,6 +56,49 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="Verification of Reset button" classname="Functionality on login page of Application" time="8.098"/>
-  <testcase name="Verification Of Submit button" classname="Functionality on login page of Application" time="8.009"/>
+  <testcase name="Verification of Reset button" classname="Functionality on login page of Application" time="7.34"/>
+  <testcase name="Verification Of Submit button" classname="Functionality on login page of Application" time="9.542"/>
+  <testcase name="Login with Invalid Credentials" classname="Functionality on login page of Application" time="6.879">
+    <error message="The step &apos;User logs in using Username as “USER1” and Password “PASSWORD1”&apos; and 2 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@When(&quot;User logs in using Username as “USER1” and Password “PASSWORD1”&quot;)&#10;public void user_logs_in_using_username_as_user1_and_password_password1() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;When(&quot;User logs in using Username as “USER1” and Password “PASSWORD1”&quot;, () -&gt; {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java8.PendingException();&#10;});&#10;@Then(&quot;error message Alert will be popup&quot;)&#10;public void error_message_alert_will_be_popup() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;Then(&quot;error message Alert will be popup&quot;, () -&gt; {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java8.PendingException();&#10;});&#10;@Then(&quot;Click on OK button&quot;)&#10;public void click_on_ok_button() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;Then(&quot;Click on OK button&quot;, () -&gt; {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java8.PendingException();&#10;});&#10;" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: The step 'User logs in using Username as “USER1” and Password “PASSWORD1”' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("User logs in using Username as “USER1” and Password “PASSWORD1”")
+public void user_logs_in_using_username_as_user1_and_password_password1() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+When("User logs in using Username as “USER1” and Password “PASSWORD1”", () -> {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java8.PendingException();
+});
+@Then("error message Alert will be popup")
+public void error_message_alert_will_be_popup() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+Then("error message Alert will be popup", () -> {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java8.PendingException();
+});
+@Then("Click on OK button")
+public void click_on_ok_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+Then("Click on OK button", () -> {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java8.PendingException();
+});
+
+</error>
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 15326
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1620490438.460][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
+[1620490438.460][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
+May 08, 2021 9:44:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
 </testsuite>

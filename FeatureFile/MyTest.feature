@@ -61,15 +61,18 @@ Scenario:  Verification Of Submit button
 	When  Enter the Username and Password
 	Then User should see the correct title of Home Page
 
-@negaviveScenario
-Scenario: Login with Invalid Credentials
+@NegativeScenario
+Scenario Outline: Login with Invalid Credentials
 
 
-When User logs in using Username as “USER1” and Password “PASSWORD1”
+When User logs in using Username as <username> and Password <password>
 Then error message Alert will be popup
 Then Click on OK button
 
+Examples:
 
+|username|password|
+|Tom     |password1|
 
 
 	
