@@ -40,17 +40,20 @@
     #  | name  | value | status  |
     #  | name1 |     5 | success |
     #  | name2 |     7 | Fail    |
+    
 
-Feature: Reset functionality on login page of Application 
+Feature: Functionality on login page of Application 
 
+Background: User is Logged In
+ 
+ 	Given Open the Chrome and launch the application
+ 	When Enter the Username and Password
+ 
+@smoke
+Scenario:  Verification of Reset button 
 
-Scenario: Verification of Reset button 
+	Then Reset the credential
 
+Scenario:  Verification Of Submit button
 
-Given Open the Chrome and launch the application			
-
-
-When Enter the Username and Password		
-
-
-Then Reset the credential
+	Then User should see the correct title of Home Page

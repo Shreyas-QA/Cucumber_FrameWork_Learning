@@ -29,12 +29,12 @@ public class Steps {
 		
     }		
 
-    @When("^Enter the Username and Password$")					
+    @When("^Enter the Username and Password $")					
     public void enter_the_UsernameandPassword() throws Throwable 							
     {		
        				
-    	driver.findElement(By.name("uid")).sendKeys("shreyas");							
-        driver.findElement(By.name("password")).sendKeys("Shreyas");
+    	driver.findElement(By.name("uid")).sendKeys("mngr47659");							
+        driver.findElement(By.name("password")).sendKeys("123456@");
     	
     }		
 
@@ -43,6 +43,13 @@ public class Steps {
     {    		
         			
     	driver.findElement(By.name("btnReset")).click();
-    	driver.close();
     }		
+    
+    @Then("^User should see the correct title of Home Page$")					
+    public void Submit_the_credential() throws Throwable 							
+    {    		
+        			
+    	driver.findElement(By.name("btnReset")).click();
+    }	
+    	
 }
