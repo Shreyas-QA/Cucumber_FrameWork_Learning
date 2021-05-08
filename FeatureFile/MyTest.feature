@@ -49,12 +49,27 @@ I want to run the cucumber test to verify it is working
 Background: User is Logged In
  
  	Given Open the Chrome and launch the application
- 	When  Enter the Username and Password
+ 	
  
 Scenario:  Verification of Reset button 
 
+	When  Enter the Username and Password
 	Then Reset the credential
 
 Scenario:  Verification Of Submit button
-
+	
+	When  Enter the Username and Password
 	Then User should see the correct title of Home Page
+
+@negaviveScenario
+Scenario: Login with Invalid Credentials
+
+
+When User logs in using Username as “USER1” and Password “PASSWORD1”
+Then error message Alert will be popup
+Then Click on OK button
+
+
+
+
+	
