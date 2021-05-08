@@ -40,16 +40,17 @@
     #  | name  | value | status  |
     #  | name1 |     5 | success |
     #  | name2 |     7 | Fail    |
-    
-
+@SmokeTest
 Feature: Functionality on login page of Application 
+
+In order to ensure Login Functionality works,
+I want to run the cucumber test to verify it is working
 
 Background: User is Logged In
  
  	Given Open the Chrome and launch the application
  	When Enter the Username and Password
  
-@smoke
 Scenario:  Verification of Reset button 
 
 	Then Reset the credential

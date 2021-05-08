@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import junit.framework.Assert;
 
 public class Steps {
 
@@ -50,6 +51,7 @@ public class Steps {
     {    		
         			
     	driver.findElement(By.name("btnLogin")).click();
+    	
     }	
     	
 }
