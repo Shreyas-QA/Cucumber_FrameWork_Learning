@@ -29,7 +29,7 @@ public class Steps {
 			options.setExperimentalOption("useAutomationExtension", false);
 			driver = new ChromeDriver(options);
 			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(200, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			driver.get("http://demo.guru99.com/v4");
 			
 		
