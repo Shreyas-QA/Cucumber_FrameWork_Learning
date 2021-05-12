@@ -76,7 +76,6 @@ public class Steps {
     	driver.findElement(By.name("btnLogin")).click();
     	String getText = driver.switchTo().alert().getText();
     	
-    	
     }
     
     @Then("Click on OK button")
