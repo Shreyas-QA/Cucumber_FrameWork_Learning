@@ -1,0 +1,17 @@
+pipeline{
+	agent any
+	
+	stages {
+	
+		stage('Compile Stage'){
+		
+		withMaven(maven: 'Maven'){
+		
+		
+		}
+		
+		}
+	
+	}
+
+}
