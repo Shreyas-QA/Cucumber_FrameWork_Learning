@@ -40,6 +40,7 @@
     #  | name  | value | status  |
     #  | name1 |     5 | success |
     #  | name2 |     7 | Fail    |
+
 @SmokeTest
 Feature: Functionality on login page of Application 
 

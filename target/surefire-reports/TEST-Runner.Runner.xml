@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Runner.Runner" time="29.091" tests="3" errors="0" skipped="0" failures="0">
+<testsuite name="Runner.Runner" time="27.157" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="16+14"/>
@@ -56,7 +56,7 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="Verification of Reset button" classname="Functionality on login page of Application" time="8.801"/>
-  <testcase name="Verification Of Submit button" classname="Functionality on login page of Application" time="10.445"/>
-  <testcase name="Login with Invalid Credentials" classname="Functionality on login page of Application" time="9.845"/>
+  <testcase name="Verification of Reset button" classname="Functionality on login page of Application" time="8.816"/>
+  <testcase name="Verification Of Submit button" classname="Functionality on login page of Application" time="9.179"/>
+  <testcase name="Login with Invalid Credentials" classname="Functionality on login page of Application" time="9.162"/>
 </testsuite>

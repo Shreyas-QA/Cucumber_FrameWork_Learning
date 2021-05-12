@@ -5,7 +5,10 @@ import io.cucumber.junit.CucumberOptions;
 import io.cucumber.junit.Cucumber;
 
 @RunWith(Cucumber.class)				
-@CucumberOptions(features="FeatureFile",glue={"StepDefination"})
+@CucumberOptions(features="FeatureFile",glue={"StepDefination"},
+monochrome=true,
+plugin = {"pretty","html:target/cucumber",
+		"json:target/cucumber.json"})
 public class Runner {
 	
 	
